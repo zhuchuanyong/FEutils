@@ -24,7 +24,6 @@ module.exports = {
       template: 'src/index.html',
       filename: 'index.html',
     }),
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),  // 热加载
   ],
   module: {
