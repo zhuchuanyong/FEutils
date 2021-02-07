@@ -4,7 +4,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import {terser} from 'rollup-plugin-terser';
 export default {
-    input: 'src/main.js', // 入口
+    input: 'index.js', // 入口
     output: [
       {  // 输出
         file: 'dist/bundle.cjs.js',  // 输出文件

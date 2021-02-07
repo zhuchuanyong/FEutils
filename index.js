@@ -1,0 +1,1 @@
+export { default as compact } from './src/Array/compact';
