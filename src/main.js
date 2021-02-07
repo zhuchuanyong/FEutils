@@ -1,3 +1,1 @@
-import {fn} from './Array/index'
-
-fn()
+export { default as compact } from './Array/compact';

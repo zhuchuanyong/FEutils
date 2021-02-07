@@ -1,1 +1,1 @@
-"use strict";var o=require("lodash-es").chunk(["a","b","c","d"],2);console.log("a",o);console.log("123",123);
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.compact=function(e){return e.filter(Boolean)};
