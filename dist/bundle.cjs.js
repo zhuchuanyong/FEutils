@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.compact=function(e){return e.filter(Boolean)};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.compact=function(e){return e.filter(Boolean)},exports.debounce=function(e,t){return function(o){e.timeoutid&&clearTimeout(e.timeoutid),e.timeoutid=setTimeout((function(){console.log("this",undefined),e.call(undefined,o),delete e.timeoutid}),t)}},exports.throttle=function(e,t){var o=0;return function(n){var i=Date.now();i-o>t&&(e.call(undefined,n),o=i)}};

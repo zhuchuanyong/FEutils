@@ -1,1 +1,1 @@
-var r=function(r){return r.filter(Boolean)};export{r as compact};
+var e=function(e){return e.filter(Boolean)},t=function(e,t){return function(n){e.timeoutid&&clearTimeout(e.timeoutid),e.timeoutid=setTimeout((function(){console.log("this",undefined),e.call(undefined,n),delete e.timeoutid}),t)}},n=function(e,t){var n=0;return function(i){var o=Date.now();o-n>t&&(e.call(undefined,i),n=o)}};export{e as compact,t as debounce,n as throttle};
