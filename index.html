@@ -18,8 +18,8 @@
     <button id="btn-debounce">防抖</button>
     <button id="btn-throttle">节流</button>
     <script type="module">
-        import debounce from './debounce.js'
-        import throttle from './throttle.js'
+        import {debounce ,throttle} from './dist/bundle.es.js'
+       
         const btnDebounce = document.getElementById('btn-debounce')
         const btnThrottle = document.getElementById('btn-throttle')
         const handle = (v) => {
