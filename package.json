@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "start": "webpack-dev-server --open"
+    "dev": "vite",
+    "serve": "vite preview"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "lodash-es": "^4.17.15"
   },
   "devDependencies": {
+    "vite": "^2.3.8",
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@rollup/plugin-commonjs": "^17.1.0",
