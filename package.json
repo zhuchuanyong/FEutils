@@ -12,11 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash-es": "^4.17.15"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
     "@rollup/plugin-commonjs": "^17.1.0",
