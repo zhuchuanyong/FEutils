@@ -1,6 +1,6 @@
 module.exports = {
 //   preset: "ts-jest",
-  // transform: {}
+//   transform: {}
   // "testEnvironment": "node",
   // "collectCoverage": true,
 //   transform: {
@@ -13,9 +13,5 @@ module.exports = {
 //     "^@/(.*)": "<rootDir>/src/$1"
 //   }
   // 下面非要从重要, 将不忽略 lodash-es, other-es-lib 这些es库, 从而使babel-jest去处理它们
-  // transformIgnorePatterns: ["<rootDir>/node_modules/(?!(lodash-es|other-es-lib))"]
-  //   transformIgnorePatterns: ["node_modules/(?!(lodash-es)/)"]
-  //   transformIgnorePatterns: [
-  //     "node_modules/(?!(lodash-es|my-project|react-native-button)/)"
-  //   ]
+  transformIgnorePatterns: ["<rootDir>/node_modules/(?!(lodash-es|other-es-lib))"]
 };
