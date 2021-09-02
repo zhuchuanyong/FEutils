@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.compact=function(e){return e.filter(Boolean)},exports.debounce=function(e,t){return function(n){e.timeid&&clearTimeout(e.timeid),e.timeid=setTimeout((function(){e.call(undefined,n)}),t)}},exports.throttle=function(e,t){var n=0;return function(o){var i=Date.now();i-n>t&&(e.call(undefined,o),n=i)}};
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.compact=e=>e.filter(Boolean);

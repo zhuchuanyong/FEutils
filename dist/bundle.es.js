@@ -1,1 +1,1 @@
-var n=function(n){return n.filter(Boolean)},e=function(n,e){return function(t){n.timeid&&clearTimeout(n.timeid),n.timeid=setTimeout((function(){n.call(undefined,t)}),e)}},t=function(n,e){var t=0;return function(i){var u=Date.now();u-t>e&&(n.call(undefined,i),t=u)}};export{n as compact,e as debounce,t as throttle};
+const o=o=>o.filter(Boolean);export{o as compact};

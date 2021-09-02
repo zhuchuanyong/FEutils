@@ -1,8 +1,9 @@
 
-import babel from 'rollup-plugin-babel';
+// import babel from 'rollup-plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import {terser} from 'rollup-plugin-terser';
+import typescript from 'rollup-plugin-typescript2';
 export default {
     input: 'index.js', // 入口
     output: [
@@ -30,9 +31,10 @@ export default {
     plugins: [
       nodeResolve(),
       commonjs(),
-      babel({
-        exclude: 'node_modules/**'
-      }),
+      typescript(/*{ plugin options }*/),
+      // babel({
+      //   exclude: 'node_modules/**'
+      // }),
       terser()
     ],
     external:['lodash-es']
