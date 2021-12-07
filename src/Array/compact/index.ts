@@ -4,7 +4,7 @@
  * @param {Array} arr  待处理的数组
  * @return {Array}  返回过滤掉假值的新数组
  */
-const compact=(arr)=>{
-    return  arr.filter(Boolean)
+const compact = (arr) => {
+  return arr.filter(Boolean)
 }
 export default compact

@@ -22,8 +22,8 @@ const chunk = (array, size) => {
     // return res;
     return idx % size === 0
       ? [...arr, [item]]
-      : [...arr.slice(0, -1), [...arr.slice(-1)[0], item]];
-  }, []);
-};
+      : [...arr.slice(0, -1), [...arr.slice(-1)[0], item]]
+  }, [])
+}
 
 export default chunk

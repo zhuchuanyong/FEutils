@@ -1,32 +1,72 @@
 {
-  "name": "handwriting",
+  "name": "zcy-utils",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "build": "rollup -c",
-    "dev": "vite",
-    "serve": "vite preview"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf dist && liuli-cli build pkg",
+    "dev": "liuli-cli build pkg -w",
+    "postinstall": "npx simple-git-hooks"
+  },
+
+  "jest": {
+    "preset": "ts-jest",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/*.test.ts"
+    ]
+  },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/preset-typescript": "^7.15.0",
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.1.1",
-    "babel-jest": "^27.0.6",
-    "eslint": "^7.32.0",
-    "jest": "^27.0.6",
-    "lodash-es": "^4.17.21",
-    "rollup": "^2.38.5",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "ts-jest": "^27.0.5",
-    "tslib": "^2.3.1",
-    "typescript": "^4.3.5",
-    "vite": "^2.3.8"
+    "@commitlint/cli": "^12.1.4",
+    "@liuli-util/cli": "^3.15.0",
+    "@liuli-util/commitlint-standard-config": "^0.1.6",
+    "@liuli-util/eslint-config-ts": "^0.2.0",
+    "@liuli-util/prettier-standard-config": "^0.1.0",
+    "@types/jest": "^27.0.2",
+    "esno": "^0.9.1",
+    "jest": "^27.4.3",
+    "lint-staged": "^11.1.1",
+    "lodash": "^4.17.21",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "simple-git-hooks": "^2.5.1",
+    "ts-jest": "^27.0.7",
+    "type-fest": "^2.3.4",
+    "typescript": "^4.4.3"
+  },
+  "sync": [
+    "gitignore",
+    "jest",
+    "eslint-ts",
+    "prettier",
+    "commitlint",
+    "simplehooks"
+  ],
+  "prettier": "@liuli-util/prettier-standard-config",
+  "simple-git-hooks": {
+    "commit-msg": "yarn commitlint --edit $1",
+    "pre-commit": "yarn lint-staged"
+  },
+  "commitlint": {
+    "extends": [
+      "@liuli-util/commitlint-standard-config"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@liuli-util/eslint-config-ts"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
