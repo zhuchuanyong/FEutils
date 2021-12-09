@@ -4,7 +4,8 @@ export { default as difference } from './Array/difference/index'
 export { default as intersection } from './Array/intersection/index'
 export { default as debounce } from './fn/debounce'
 export { default as throttle } from './fn/throttle'
-import { parse } from './fn/arrayTree/index'
+import { toTree } from './fn/arrayTree/index'
+export { toTree }
 
 const arr = [
   { id: 1, parentId: null },
@@ -14,6 +15,11 @@ const arr = [
   { id: 5, parentId: 2 },
   { id: 6, parentId: 4 },
 ]
-const a = parse(arr)
+const arr2 = [
+  { id: 1, parentId: null },
+  { id: 2, parentId: null },
+  { id: 3, parentId: 1 },
+]
+const a = toTree(arr2)
 console.log(`a`, a)
 // toTree(arr)

@@ -17,7 +17,7 @@
   "jest": {
     "preset": "ts-jest",
     "testMatch": [
-      "<rootDir>/src/**/__tests__/*.test.ts"
+      "<rootDir>/test/**/*.test.ts"
     ]
   },
   "devDependencies": {

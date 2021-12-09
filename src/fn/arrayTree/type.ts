@@ -31,7 +31,7 @@ export interface Node extends Row {
 /**
  * 数据导出
  */
-export type Export<T> = (
+export type Exporter<T> = (
   nodes: Record<ID, T[]>,
   result: ParseResult<T>,
 ) => T[] | null | undefined

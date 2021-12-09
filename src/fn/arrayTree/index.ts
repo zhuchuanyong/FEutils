@@ -1,1 +1,1 @@
-export { parse } from './common/parse'
+export { toTree } from './transform/toTree'
