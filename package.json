@@ -14,7 +14,6 @@
     "dev": "liuli-cli build pkg -w",
     "postinstall": "npx simple-git-hooks"
   },
-
   "jest": {
     "preset": "ts-jest",
     "testMatch": [
@@ -68,5 +67,8 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.177"
   }
 }
