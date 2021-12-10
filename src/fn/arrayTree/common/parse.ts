@@ -6,7 +6,7 @@ import { isEmpty, isNil } from 'lodash'
  * options 配置项类型
  */
 export type ParseOptions<T, S> = {
-  idkey?: string //id属性名
+  idKey?: string //id属性名
   parentKey?: string //parentId 的属性名
   childrenKey?: string //支持自定义 children 的属性名
   // transform?:Transform<T,S> // 允许外部转换数据
@@ -31,7 +31,7 @@ export function parse<S = Node, T extends Row = Row>(
   options: ParseOptions<T, S> = {},
 ): ParseResult<S> {
   // 获取配置项 key
-  const idKey = options.idkey ?? ID_KEY
+  const idKey = options.idKey ?? ID_KEY
   const parentKey = options.parentKey ?? PARENT_ID_KEY
   const childrenKey = options.childrenKey ?? CHILDREN_KEY
   const nodes: Record<ID, S> = {} //包含所有节点的对象  k是id  值是节点数据

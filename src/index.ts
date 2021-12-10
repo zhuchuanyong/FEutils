@@ -13,11 +13,6 @@ const arr = [
   { id: 3, parentId: 1 },
 ]
 
-const arr2 = [
-  { id: 1, parentId: 0 },
-  { id: 2, parentId: 0 },
-  { id: 3, parentId: 1 },
-]
-const a = toTree(arr2)
+const a = toTree(arr)
 console.log(`a`, a)
 // toTree(arr)

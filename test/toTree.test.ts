@@ -53,4 +53,26 @@ describe('transform/toTree.js', function () {
 
     deepStrictEqual(result, expected)
   })
+
+  it('测试自定义id toTree(idKey=sub)', function () {
+    const result = toTree(
+      [
+        { sub: 1, parentId: null },
+        { sub: 2, parentId: null },
+        { sub: 3, parentId: 1 },
+      ],
+      { idKey: 'sub' },
+    )
+
+    const expected = [
+      {
+        sub: 1,
+        parentId: null,
+        children: [{ sub: 3, parentId: 1, children: [] }],
+      },
+      { sub: 2, parentId: null, children: [] },
+    ]
+
+    deepStrictEqual(result, expected)
+  })
 })
