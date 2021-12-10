@@ -1,6 +1,6 @@
 import { ID, Node, Row } from '../type'
 import { CHILDREN_KEY, ID_KEY, PARENT_ID_KEY, ROOT_ID } from './constants'
-import { isEmpty } from 'lodash'
+import { isEmpty, isNil } from 'lodash'
 
 /**
  * options 配置项类型
@@ -43,34 +43,29 @@ export function parse<S = Node, T extends Row = Row>(
     const node: any = item
     // 获取节点ID
     const id = item?.[idKey] as ID // 去掉as 下一行 childNodes?.[id] 编辑器会爆红
-    const children = childNodes?.[id] // 从子节点列表中 获取子节点数据
-    if (!children) {
+    const children = childNodes?.[id] ?? [] // 从子节点列表中 获取子节点数据
+
+    // 设置当前节点的子节点数据
+    if (isEmpty(children)) {
       childNodes[id] = (node as Row)[childrenKey] = []
     } else {
       node[childrenKey] = children
     }
-    // 把子节点数据加进当前节点
-    // ;(node as Row)[childrenKey] = children
 
     // 获取父节点
     const parentId = (node?.[parentKey] ?? ROOT_ID) as ID
 
-    // 获取同级元素(父节点的子节点列表)
+    // 获取同级元素(父节点的子节点列表)childNodes?.[parentId]
     // 通过父id 获取子节点列表  子节点列表就是当前节点的同级元素
-    // const siblings = childNodes?.[parentId]
-    // 则把当前节点加入到子节点列表   siblings 和childNodes?.[parentId] 是引用类型
-    // insert(siblings, node as S)
-    // if (!isEmpty(siblings)) {
-    //   insert(siblings, node)
-    // } else {
-    //   insert((childNodes[parentId] = []), node)
-    // }
-    const siblings = childNodes[parentId]
-    if (siblings) {
-      insert(siblings, node)
-    } else {
-      insert((childNodes[parentId] = []), node)
+    // 子节点列表不存在就设置为空数组
+    // 把当前节点加入到子节点列表
+    // childNodes[id] childNodes[root] 存在引用类型
+    if (isNil(childNodes[parentId])) {
+      childNodes[parentId] = []
     }
+    insert(childNodes[parentId], node)
+
+    // 为了方便外部根据ID获取节点信息
     nodes[id] = node
   })
 
