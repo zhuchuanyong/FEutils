@@ -6,5 +6,5 @@ export function toTree<S = Node, T extends Row = Row>(
   data: T[],
   options: any = {},
 ): S[] {
-  return exporter(parse(data, options))
+  return exporter(parse(data, options), options.root)
 }
