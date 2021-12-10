@@ -75,4 +75,40 @@ describe('transform/toTree.js', function () {
 
     deepStrictEqual(result, expected)
   })
+
+  it('测试自定义父节点id toTree(parentKey=pid)', function () {
+    const result = toTree(
+      [
+        { id: 1, pid: null },
+        { id: 2, pid: null },
+        { id: 3, pid: 1 },
+      ],
+      { parentKey: 'pid' },
+    )
+
+    const expected = [
+      { id: 1, pid: null, children: [{ id: 3, pid: 1, children: [] }] },
+      { id: 2, pid: null, children: [] },
+    ]
+
+    deepStrictEqual(result, expected)
+  })
+
+  it('测试自定义子节点key toTree(childrenKey=items)', function () {
+    const result = toTree(
+      [
+        { id: 1, parentId: null },
+        { id: 2, parentId: null },
+        { id: 3, parentId: 1 },
+      ],
+      { childrenKey: 'items' },
+    )
+
+    const expected = [
+      { id: 1, parentId: null, items: [{ id: 3, parentId: 1, items: [] }] },
+      { id: 2, parentId: null, items: [] },
+    ]
+
+    deepStrictEqual(result, expected)
+  })
 })

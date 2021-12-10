@@ -7,12 +7,12 @@ export { default as throttle } from './fn/throttle'
 import { toTree } from './fn/arrayTree/index'
 export { toTree }
 
-const arr = [
-  { id: 1, parentId: null },
-  { id: 2, parentId: null },
-  { id: 3, parentId: 1 },
-]
+// const arr = [
+//   { id: 1, parentId: null },
+//   { id: 2, parentId: null },
+//   { id: 3, parentId: 1 },
+// ]
 
-const a = toTree(arr)
-console.log(`a`, a)
+// const a = toTree(arr)
+// console.log(`a`, a)
 // toTree(arr)
