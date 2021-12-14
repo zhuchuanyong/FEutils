@@ -4,6 +4,10 @@
     "lib": [
       "ESNext"
     ],
+    "paths": {
+      "@lib/*": ["./dist/*"]
+    },
+    "baseUrl": ".",
     "outDir": "./dist",
     "skipLibCheck": true,
     "esModuleInterop": true,

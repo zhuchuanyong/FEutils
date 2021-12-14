@@ -17,8 +17,12 @@
   "jest": {
     "preset": "ts-jest",
     "testMatch": [
-      "<rootDir>/test/**/*.test.ts"
-    ]
+      "<rootDir>/test/**/*.test.ts",
+      "<rootDir>/src/**/*.test.ts"
+    ],
+    "moduleNameMapper":{
+      "^@lib/(.*)$": "<rootDir>/dist/$1"
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
