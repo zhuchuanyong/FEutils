@@ -1,4 +1,5 @@
-import { intersection } from '@lib/index'
+// import { intersection } from '@lib/index'
+import { intersection } from '@src/index'
 describe('测试 intersection', () => {
   test('intersection ', () => {
     const arrays = [

@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "paths": {
-      "@lib/*": ["./dist/*"]
+      "@lib/*": ["./dist/*"],
+      "@src/*": ["./src/*"]
     },
     "baseUrl": ".",
     "outDir": "./dist",
@@ -17,15 +16,11 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": true
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src", "test/toTree.test.ts"],
   "typedocOptions": {
-    "entryPoints": [
-      "src/index.ts"
-    ],
+    "entryPoints": ["src/index.ts"],
     "out": "docs",
     "readme": "README.md",
     "gitRemote": "origin"
