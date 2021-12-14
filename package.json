@@ -16,6 +16,7 @@
   },
   "jest": {
     "preset": "ts-jest",
+    "collectCoverage":true,
     "testMatch": [
       "<rootDir>/test/**/*.test.ts",
       "<rootDir>/src/**/*.test.ts"

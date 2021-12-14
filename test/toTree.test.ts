@@ -1,4 +1,4 @@
-import { toTree } from '../dist/index'
+import { toTree } from '@lib/index'
 import { deepStrictEqual } from 'assert'
 
 describe('transform/toTree.js', function () {
