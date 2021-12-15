@@ -10,7 +10,9 @@
   "license": "ISC",
   "scripts": {
     "test": "jest",
-    "build": "rimraf dist && liuli-cli build pkg",
+    "build": "npm run buildlib && npm run buildiife",
+    "buildlib": "rimraf dist && liuli-cli build pkg",
+    "buildiife": "liuli-cli build single iife pkg",
     "dev": "liuli-cli build pkg -w",
     "postinstall": "npx simple-git-hooks"
   },
