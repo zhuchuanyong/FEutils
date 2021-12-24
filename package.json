@@ -1,6 +1,6 @@
 {
   "name": "@zcytools/utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -22,13 +22,13 @@
   },
   "jest": {
     "preset": "ts-jest",
-    "collectCoverage":true,
+    "collectCoverage": true,
     "testMatch": [
       "<rootDir>/test/**/*.test.ts",
       "<rootDir>/src/**/*.test.ts",
       "<rootDir>/src/**/__tests__/*.test.ts"
     ],
-    "moduleNameMapper":{
+    "moduleNameMapper": {
       "^@lib/(.*)$": "<rootDir>/dist/$1",
       "^@src/(.*)$": "<rootDir>/src/$1"
     }
