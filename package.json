@@ -17,7 +17,6 @@
     "buildlib": "rimraf dist && liuli-cli build pkg",
     "buildiife": "liuli-cli build single iife pkg",
     "dev": "liuli-cli build pkg -w",
-    "postinstall": "npx simple-git-hooks",
     "publish": "npm publish --access public"
   },
   "jest": {
@@ -46,7 +45,6 @@
     "lodash": "^4.17.21",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
-    "simple-git-hooks": "^2.5.1",
     "ts-jest": "^27.0.7",
     "type-fest": "^2.3.4",
     "typescript": "^4.4.3"
@@ -60,10 +58,6 @@
     "simplehooks"
   ],
   "prettier": "@liuli-util/prettier-standard-config",
-  "simple-git-hooks": {
-    "commit-msg": "yarn commitlint --edit $1",
-    "pre-commit": "yarn lint-staged"
-  },
   "commitlint": {
     "extends": [
       "@liuli-util/commitlint-standard-config"
