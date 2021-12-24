@@ -1,7 +1,6 @@
 {
-  "name": "zcy-utils",
-  "private": true,
-  "version": "1.0.0",
+  "name": "@zcytools/utils",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -14,7 +13,8 @@
     "buildlib": "rimraf dist && liuli-cli build pkg",
     "buildiife": "liuli-cli build single iife pkg",
     "dev": "liuli-cli build pkg -w",
-    "postinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks",
+    "publish": "npm publish --access public"
   },
   "jest": {
     "preset": "ts-jest",
