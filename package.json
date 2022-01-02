@@ -1,10 +1,8 @@
 {
-  "name": "@zcytools/utils",
-  "version": "0.0.2",
+  "name": "@zcyutils/utils",
+  "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
   "author": "zhuchuanuyong",
   "license": "MIT",
   "repository": {
@@ -12,70 +10,13 @@
     "url": "https://github.com/zhuchuanyong/FEutils"
   },
   "scripts": {
-    "test": "jest",
-    "build": "npm run buildlib && npm run buildiife",
-    "buildlib": "rimraf dist && liuli-cli build pkg",
-    "buildiife": "liuli-cli build single iife pkg",
-    "dev": "liuli-cli build pkg -w",
-    "publish": "npm publish --access public"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "collectCoverage": true,
-    "testMatch": [
-      "<rootDir>/test/**/*.test.ts",
-      "<rootDir>/src/**/*.test.ts",
-      "<rootDir>/src/**/__tests__/*.test.ts"
-    ],
-    "moduleNameMapper": {
-      "^@lib/(.*)$": "<rootDir>/dist/$1",
-      "^@src/(.*)$": "<rootDir>/src/$1"
-    }
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@liuli-util/cli": "^3.15.0",
-    "@liuli-util/commitlint-standard-config": "^0.1.6",
-    "@liuli-util/eslint-config-ts": "^0.2.0",
-    "@liuli-util/prettier-standard-config": "^0.1.0",
-    "@types/jest": "^27.0.2",
-    "esno": "^0.9.1",
-    "jest": "^27.4.3",
-    "lint-staged": "^11.1.1",
-    "lodash": "^4.17.21",
-    "prettier": "^2.3.2",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^27.0.7",
-    "type-fest": "^2.3.4",
-    "typescript": "^4.4.3"
-  },
-  "sync": [
-    "gitignore",
-    "jest",
-    "eslint-ts",
-    "prettier",
-    "commitlint",
-    "simplehooks"
-  ],
-  "prettier": "@liuli-util/prettier-standard-config",
-  "commitlint": {
-    "extends": [
-      "@liuli-util/commitlint-standard-config"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "@liuli-util/eslint-config-ts"
-    ]
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,css,vue}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "@types/lodash": "^4.14.177"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:tree2arr": "pnpm dev --filter \"@zcyutils/tree2arr\"",
+    "build:tree2arr": "pnpm build --filter \"@zcyutils/tree2arr\"",
+    "pub:tree2arr": "pnpm pub --filter \"@zcyutils/tree2arr\"",
+    "dev:other": "pnpm dev --filter \"@zcyutils/other\"",
+    "build:other": "pnpm build --filter \"@zcyutils/other\"",
+    "pub:other": "pnpm pub --filter \"@zcyutils/other\"",
+    "test:other": "pnpm test --filter \"@zcyutils/other\""
   }
 }

@@ -1,0 +1,55 @@
+{
+  "private":false,
+  "name": "@zcyutils/tree2arr",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm run buildlib && pnpm run buildiife",
+    "buildlib": "rimraf dist && liuli-cli build pkg",
+    "buildiife": "liuli-cli build single iife pkg",
+    "dev": "liuli-cli build pkg -w",
+    "pub": "npm publish --access public"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/*.test.ts"
+    ]
+  },
+  "devDependencies": {
+    "@liuli-util/cli": "^3.15.0",
+    "@types/jest": "^27.0.2",
+    "esno": "^0.9.1",
+    "jest": "^27.4.3",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.7",
+    "type-fest": "^2.3.4",
+    "typescript": "^4.4.3",
+    "prettier": "^2.3.2",
+    "@liuli-util/prettier-standard-config": "^0.1.0",
+    "@commitlint/cli": "^12.1.4",
+    "@liuli-util/commitlint-standard-config": "^0.1.6",
+    "@liuli-util/eslint-config-ts": "^0.2.0"
+  },
+  "sync": [
+    "gitignore",
+    "jest",
+    "eslint-ts",
+    "prettier",
+    "commitlint"
+  ],
+  "prettier": "@liuli-util/prettier-standard-config",
+  "commitlint": {
+    "extends": [
+      "@liuli-util/commitlint-standard-config"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@liuli-util/eslint-config-ts"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 
-# 前端常用工具方法
+前端常用工具方法
 
 [![GitHub issues](https://img.shields.io/github/issues/zhuchuanyong/FEutils)](https://github.com/zhuchuanyong/FEutils/issues)
 [![GitHub forks](https://img.shields.io/github/forks/zhuchuanyong/FEutils)](https://github.com/zhuchuanyong/FEutils/network)
@@ -12,7 +12,7 @@
 ## Installation
 
 ```shell
-$ npm i lodash  @zcytools/other 
-import {chunk} from '@zcytools/other'
+$ npm i lodash  @zcytools/utils 
+import {chunk} from '@zcytools/utils'
 ```
 
