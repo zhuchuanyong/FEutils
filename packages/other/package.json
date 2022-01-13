@@ -1,6 +1,6 @@
 {
   "name": "@zcyutils/other",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/global.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,6 +16,10 @@
     "build": "tsup src/index.ts --format esm,cjs,iife",
     "pub": "npm publish --access public"
   },
+  "files":[
+    "dist",
+    "src"
+  ],
   "jest": {
     "preset": "ts-jest",
     "collectCoverage": true,
