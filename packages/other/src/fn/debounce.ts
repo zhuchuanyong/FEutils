@@ -1,5 +1,5 @@
-const debounce = (callback, delay) => {
-  return (event) => {
+const debounce = (callback: any, delay: number | undefined) => {
+  return (event: any) => {
     if (callback.timeid) {
       clearTimeout(callback.timeid)
     }

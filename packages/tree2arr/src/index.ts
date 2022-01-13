@@ -1,3 +1,1 @@
-export function hello(name: string) {
-  return `hello ${name}`
-}
+export { toTree } from './transform/toTree'

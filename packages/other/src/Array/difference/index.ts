@@ -4,14 +4,14 @@
  * @param {Array} 排除的值
  * @return {Array} 返回一个过滤值后的新数组
  */
-const difference = (array, values) => {
+const difference = (array: any, values: any) => {
   const arr = [array, values]
   //   return arr.reduce((a, b) => {
   //     return a.filter((c) => {
   //       return !b.includes(c);
   //     });
   //   });
-  arr.reduce((a, b) => a.filter((c) => !b.includes(c)))
+  arr.reduce((a, b) => a.filter((c: any) => !b.includes(c)))
 }
 
 export default difference

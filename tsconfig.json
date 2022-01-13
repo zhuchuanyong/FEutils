@@ -2,10 +2,6 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["ESNext"],
-    "paths": {
-      "@lib/*": ["./dist/*"],
-      "@src/*": ["./src/*"]
-    },
     "baseUrl": ".",
     "outDir": "./dist",
     "skipLibCheck": true,

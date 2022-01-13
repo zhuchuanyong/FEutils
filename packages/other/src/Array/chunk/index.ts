@@ -5,8 +5,8 @@
  * @return {Array} 返回一个包含拆分区块的新数组（注：相当于一个二维数组）
  *
  */
-const chunk = (array, size) => {
-  return array.reduce((arr, item, idx) => {
+const chunk = (array: any[], size: number) => {
+  return array.reduce((arr:any, item:any, idx:number) => {
     // arr 拆分的区块数据
     // 二维数组 有余数 说明最后一个区块数据不足
     // 无余数 说明每一区块数据正好，需要添加新区块

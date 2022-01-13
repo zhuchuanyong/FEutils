@@ -1,8 +1,8 @@
 {
   "name": "@zcyutils/other",
   "version": "0.0.1",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/global.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "author": "zhuchuanuyong",
   "license": "MIT",
@@ -12,10 +12,8 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "npm run buildlib && npm run buildiife",
-    "buildlib": "rimraf dist && liuli-cli build pkg",
-    "buildiife": "liuli-cli build single iife pkg",
-    "dev": "liuli-cli build pkg -w",
+    "dev": "tsup src/index.ts --format esm,cjs,iife --watch --dts",
+    "build": "tsup src/index.ts --format esm,cjs,iife",
     "pub": "npm publish --access public"
   },
   "jest": {
@@ -32,45 +30,13 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@liuli-util/cli": "^3.15.0",
-    "@liuli-util/commitlint-standard-config": "^0.1.6",
-    "@liuli-util/eslint-config-ts": "^0.2.0",
-    "@liuli-util/prettier-standard-config": "^0.1.0",
     "@types/jest": "^27.0.2",
     "@types/lodash": "^4.14.178",
-    "esno": "^0.9.1",
     "jest": "^27.4.3",
-    "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.7",
     "type-fest": "^2.3.4",
     "typescript": "^4.4.3"
-  },
-  "sync": [
-    "gitignore",
-    "jest",
-    "eslint-ts",
-    "prettier",
-    "commitlint"
-  ],
-  "prettier": "@liuli-util/prettier-standard-config",
-  "commitlint": {
-    "extends": [
-      "@liuli-util/commitlint-standard-config"
-    ]
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,css,vue}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "@liuli-util/eslint-config-ts"
-    ]
   },
   "dependencies": {
     "lodash": "^4.17.21"
