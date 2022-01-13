@@ -1,10 +1,11 @@
 {
-  "private":false,
+  "private": false,
   "name": "@zcyutils/tree2arr",
   "version": "0.0.2",
-  "main": "dist/global.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,11 +13,11 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "tsup src/index.ts --format esm,cjs,iife --watch --dts",
-    "build": "tsup src/index.ts --format esm,cjs,iife",
+    "dev": "tsup src/index.ts --format esm,cjs,iife --watch",
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts --splitting --target es2020",
     "pub": "npm publish --access public"
   },
-  "files":[
+  "files": [
     "dist",
     "src"
   ],
@@ -36,6 +37,7 @@
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "jest": "^27.4.3",
+    "lodash": "^4.17.21",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.7",
     "type-fest": "^2.3.4",

@@ -1,9 +1,10 @@
 {
   "name": "@zcyutils/other",
   "version": "0.0.2",
-  "main": "dist/global.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "author": "zhuchuanuyong",
   "license": "MIT",
   "repository": {
@@ -12,8 +13,8 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "tsup src/index.ts --format esm,cjs,iife --watch --dts",
-    "build": "tsup src/index.ts --format esm,cjs,iife",
+    "dev": "tsup src/index.ts --format esm,cjs,iife --watch",
+    "build": "tsup src/index.ts --format esm,cjs,iife --dts",
     "pub": "npm publish --access public"
   },
   "files":[
