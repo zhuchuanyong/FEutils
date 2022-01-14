@@ -10,7 +10,7 @@ importers:
       '@zcytools/prettier-standard-config': 0.0.1
       tsup: 5.11.11
 
-  packages/other:
+  packages/kit:
     specifiers:
       '@types/jest': ^27.0.2
       '@types/lodash': ^4.14.178
@@ -22,6 +22,24 @@ importers:
       typescript: ^4.4.3
     dependencies:
       lodash: 4.17.21
+    devDependencies:
+      '@types/jest': 27.4.0
+      '@types/lodash': 4.14.178
+      jest: 27.4.5
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_334772dd386c536d54092d15fe05a291
+      type-fest: 2.8.0
+      typescript: 4.5.4
+
+  packages/other:
+    specifiers:
+      '@types/jest': ^27.0.2
+      '@types/lodash': ^4.14.178
+      jest: ^27.4.3
+      rimraf: ^3.0.2
+      ts-jest: ^27.0.7
+      type-fest: ^2.3.4
+      typescript: ^4.4.3
     devDependencies:
       '@types/jest': 27.4.0
       '@types/lodash': 4.14.178

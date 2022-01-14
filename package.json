@@ -19,7 +19,10 @@
     "build:other": "pnpm build --filter \"@zcyutils/other\"",
     "pub:other": "pnpm pub --filter \"@zcyutils/other\"",
     "test:other": "pnpm test --filter \"@zcyutils/other\"",
-    "test:tree2arr": "pnpm test --filter \"@zcyutils/tree2arr\""
+    "test:tree2arr": "pnpm test --filter \"@zcyutils/tree2arr\"",
+
+    "dev:kit": "pnpm dev --filter \"@zcyutils/kit\"",
+    "build:kit": "pnpm build --filter \"@zcyutils/kit\""
   },
   "devDependencies": {
     "@zcytools/prettier-standard-config": "^0.0.1",
