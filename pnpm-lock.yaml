@@ -40,10 +40,11 @@ importers:
       ts-jest: ^27.0.7
       type-fest: ^2.3.4
       typescript: ^4.4.3
+    dependencies:
+      lodash: 4.17.21
     devDependencies:
       '@types/jest': 27.4.0
       jest: 27.4.5
-      lodash: 4.17.21
       rimraf: 3.0.2
       ts-jest: 27.1.2_334772dd386c536d54092d15fe05a291
       type-fest: 2.8.0

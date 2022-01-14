@@ -1,8 +1,8 @@
 {
   "name": "@zcyutils/other",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "author": "zhuchuanuyong",
@@ -13,8 +13,8 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "tsup src/index.ts --format esm,cjs,iife --watch",
-    "build": "tsup src/index.ts --format esm,cjs,iife --dts",
+    "dev": "tsup src/index.ts --format esm,cjs,iife --legacy-output --watch ",
+    "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --dts --clean",
     "pub": "npm publish --access public"
   },
   "files":[
@@ -42,8 +42,5 @@
     "ts-jest": "^27.0.7",
     "type-fest": "^2.3.4",
     "typescript": "^4.4.3"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
   }
 }
