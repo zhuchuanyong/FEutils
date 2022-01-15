@@ -4,69 +4,38 @@ importers:
 
   .:
     specifiers:
+      '@types/jest': ^27.0.2
       '@zcytools/prettier-standard-config': ^0.0.1
+      jest: ^27.4.3
+      rimraf: ^3.0.2
+      ts-jest: ^27.0.7
       tsup: ^5.11.11
+      type-fest: ^2.3.4
+      typescript: ^4.4.3
     devDependencies:
+      '@types/jest': 27.4.0
       '@zcytools/prettier-standard-config': 0.0.1
-      tsup: 5.11.11
+      jest: 27.4.5
+      rimraf: 3.0.2
+      ts-jest: 27.1.2_334772dd386c536d54092d15fe05a291
+      tsup: 5.11.11_typescript@4.5.4
+      type-fest: 2.8.0
+      typescript: 4.5.4
 
   packages/kit:
     specifiers:
-      '@types/jest': ^27.0.2
-      '@types/lodash': ^4.14.178
-      jest: ^27.4.3
       lodash: ^4.17.21
-      rimraf: ^3.0.2
-      ts-jest: ^27.0.7
-      type-fest: ^2.3.4
-      typescript: ^4.4.3
     dependencies:
       lodash: 4.17.21
-    devDependencies:
-      '@types/jest': 27.4.0
-      '@types/lodash': 4.14.178
-      jest: 27.4.5
-      rimraf: 3.0.2
-      ts-jest: 27.1.2_334772dd386c536d54092d15fe05a291
-      type-fest: 2.8.0
-      typescript: 4.5.4
 
   packages/other:
-    specifiers:
-      '@types/jest': ^27.0.2
-      '@types/lodash': ^4.14.178
-      jest: ^27.4.3
-      rimraf: ^3.0.2
-      ts-jest: ^27.0.7
-      type-fest: ^2.3.4
-      typescript: ^4.4.3
-    devDependencies:
-      '@types/jest': 27.4.0
-      '@types/lodash': 4.14.178
-      jest: 27.4.5
-      rimraf: 3.0.2
-      ts-jest: 27.1.2_334772dd386c536d54092d15fe05a291
-      type-fest: 2.8.0
-      typescript: 4.5.4
+    specifiers: {}
 
   packages/tree2arr:
     specifiers:
-      '@types/jest': ^27.0.2
-      jest: ^27.4.3
       lodash: ^4.17.21
-      rimraf: ^3.0.2
-      ts-jest: ^27.0.7
-      type-fest: ^2.3.4
-      typescript: ^4.4.3
     dependencies:
       lodash: 4.17.21
-    devDependencies:
-      '@types/jest': 27.4.0
-      jest: 27.4.5
-      rimraf: 3.0.2
-      ts-jest: 27.1.2_334772dd386c536d54092d15fe05a291
-      type-fest: 2.8.0
-      typescript: 4.5.4
 
 packages:
 
@@ -694,10 +663,6 @@ packages:
     dependencies:
       jest-diff: 27.4.2
       pretty-format: 27.4.2
-    dev: true
-
-  /@types/lodash/4.14.178:
-    resolution: {integrity: sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==}
     dev: true
 
   /@types/node/17.0.6:
@@ -2965,7 +2930,7 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /tsup/5.11.11:
+  /tsup/5.11.11_typescript@4.5.4:
     resolution: {integrity: sha512-rgbTu+KhAI9PdGUS07rKohDXbRLTstBGJaxl75q7RZYRGF+n+kN8L4RlXY5pqYb9Hsq0gEB6nS39v7nSvVBS+g==}
     hasBin: true
     peerDependencies:
@@ -2988,6 +2953,7 @@ packages:
       source-map: 0.7.3
       sucrase: 3.20.3
       tree-kill: 1.2.2
+      typescript: 4.5.4
     transitivePeerDependencies:
       - supports-color
       - ts-node

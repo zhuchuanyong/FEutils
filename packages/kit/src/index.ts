@@ -1,2 +1,2 @@
-export * from '../../other';
-export * from '../../tree2arr';
+export * from '../../other/src/index';
+export * from '../../tree2arr/src/index';
