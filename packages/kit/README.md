@@ -1,18 +1,27 @@
 
-前端常用工具方法
+# 工具类库的聚合
+## ✨ 特性
+- 🚀 快速，使用简单
+- 📦 基于 esbuild 进行打包，提供`cjs`、`es`、`umd`三种格式
+- 💻 使用 TypeScript 构建，提供完整的类型定义文件
 
-[![GitHub issues](https://img.shields.io/github/issues/zhuchuanyong/FEutils)](https://github.com/zhuchuanyong/FEutils/issues)
-[![GitHub forks](https://img.shields.io/github/forks/zhuchuanyong/FEutils)](https://github.com/zhuchuanyong/FEutils/network)
-[![GitHub stars](https://img.shields.io/github/stars/zhuchuanyong/FEutils)](https://github.com/zhuchuanyong/FEutils/stargazers)
-[![GitHub license](https://img.shields.io/github/license/zhuchuanyong/FEutils)](https://github.com/zhuchuanyong/FEutils)
-
-* 例如lodash的一些工具函数
-* treeTolist
-
-## Installation
+## 🏗 安装
 
 ```shell
-$ npm i lodash  @zcytools/utils 
-import {chunk} from '@zcytools/utils'
+$ npm i @zcytools/kit
+$ yarn add @zcytools/kit
+$ pnpm add @zcytools/kit
+```
+## 🔨 使用
+
+* 浏览器:
+
+```html
+<script src="iife/index.js"></script>
 ```
 
+* ES6/TS
+
+```ts
+import { xx } from '@zcytools/kit';
+```

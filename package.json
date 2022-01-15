@@ -20,7 +20,9 @@
     "test:other": "pnpm test --filter \"@zcyutils/other\"",
     "test:tree2arr": "pnpm test --filter \"@zcyutils/tree2arr\"",
     "dev:kit": "pnpm dev --filter \"@zcyutils/kit\"",
-    "build:kit": "pnpm build --filter \"@zcyutils/kit\""
+    "build:kit": "pnpm build --filter \"@zcyutils/kit\"",
+    "build:storage": "pnpm build --filter \"@zcyutils/storage\"",
+    "pub:storage": "pnpm pub --filter \"@zcyutils/storage\""
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",

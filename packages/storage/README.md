@@ -31,3 +31,9 @@ import { xx } from '@zcytools/utils';
 import { xx } from '@zcytools/storage';
 ```
 
+## todo
+
+* 设置过期时间
+  * 把过期时间储存,取值判断是否过期， 缺点是改动本地设备时间，过期时间会不正确
+* 数据加密
+  * cookie储存key设置过期时间 localstorage 储存值
