@@ -45,7 +45,7 @@ import {chunk} from '@zcytools/other'
 * [fe-utils](https://github.com/zhangyunling/fe-utils)
 * [liuli-utils](https://github.com/rxliuli/liuli-utils) *
 * [utils](https://github.com/pansyjs/utils) *
-* [dt-utils](https://github.com/DTStack/dt-utils)
+* [dt-utils](https://github.com/DTStack/dt-utils) *
 * [mUtils](https://github.com/Alie-z/mUtils)
 * [cnchar](https://github.com/theajack/cnchar) 汉字相关
 * [utils](https://github.com/wenzi0github/utils)
@@ -53,6 +53,8 @@ import {chunk} from '@zcytools/other'
 * [vtils](https://github.com/fjc0k/vtils) *
 * [utils](https://github.com/planjs/utils) *
 * [onex-utils](https://github.com/unity-template/onex-utils) *
+* [jcommon](https://github.com/wxingheng/jcommon) 
+* [always-helpe](https://github.com/Rabbitzzc/always-helper) *
 
 
 ## todo
