@@ -43,6 +43,26 @@ import { xx } from '@zcytools/storage';
 
 * typedoc 生成文档
 
+### utils 分类
+
+* Object
+* Array 
+* Date
+* Function
+* String
+* Number
+* TypeOf
+* validator
+* Web Api
+* * url
+  * base64
+  * blobToDataURL 将 file、blob、stream 格式 转 DateURL
+  * dataURLtoBlob 将图片的 dataURL 转为 Blob 格式
+  * getImgToBase64 将图片的 url 转为 base64 格式
+  * getImgToBlob 将图片的 url 转为 Blob 格式
+  * downloadFile 在客户端触发文件下载
+  * setClipboardData 将文本数据放置在剪贴板上
+
 ## 其他utils 库
 * [utils](https://github.com/cd-dongzi/utils)
 * [xe-utils](https://github.com/x-extends/xe-utils)
@@ -84,10 +104,6 @@ import { xx } from '@zcytools/storage';
 * [jcommon](https://github.com/wxingheng/jcommon) 
 * [always-helpe](https://github.com/Rabbitzzc/always-helper) *
 
-
-## todo
-
-* typedoc 生成文档
 
 
 

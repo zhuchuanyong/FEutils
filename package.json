@@ -21,6 +21,7 @@
     "test:tree2arr": "pnpm test --filter \"@zcyutils/tree2arr\"",
     "dev:kit": "pnpm dev --filter \"@zcyutils/kit\"",
     "build:kit": "pnpm build --filter \"@zcyutils/kit\"",
+    "dev:storage": "pnpm dev --filter \"@zcyutils/storage\"",
     "build:storage": "pnpm build --filter \"@zcyutils/storage\"",
     "pub:storage": "pnpm pub --filter \"@zcyutils/storage\""
   },
