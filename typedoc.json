@@ -1,0 +1,5 @@
+{
+  "entryPoints": ["packages/other/src/index.ts","packages/storage/src/index.ts","packages/tree2arr/src/index.ts"], 
+  "out": "docs",
+  "exclude": ["packages/**/*.test.ts"]
+}

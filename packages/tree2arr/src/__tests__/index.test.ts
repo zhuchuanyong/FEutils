@@ -1,4 +1,4 @@
-import { toTree } from '@src/index'
+import {toTree} from '../index'
 // import { toTree } from '../index'
 import { deepStrictEqual } from 'assert'
 

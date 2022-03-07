@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["ESNext"],
+    "lib": ["ESNext","DOM"],
     "baseUrl": ".",
     "outDir": "./dist",
     "skipLibCheck": true,
@@ -13,12 +13,5 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true
-  },
-  "include": ["src", "test/toTree.test.ts"],
-  "typedocOptions": {
-    "entryPoints": ["src/index.ts"],
-    "out": "docs",
-    "readme": "README.md",
-    "gitRemote": "origin"
   }
 }

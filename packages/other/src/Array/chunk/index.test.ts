@@ -1,4 +1,4 @@
-import { chunk } from '@src/index'
+import chunk from './index'
 import { deepStrictEqual } from 'assert'
 describe('测试 chunk', () => {
   test('compact ', () => {
