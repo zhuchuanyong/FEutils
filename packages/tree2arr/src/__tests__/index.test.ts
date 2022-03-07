@@ -3,7 +3,6 @@ import {toTree} from '../index'
 import { deepStrictEqual } from 'assert'
 
 describe('transform/toTree.js', function () {
-  console.log(`aaa`)
   it('测试基本 toTree()', function () {
     const result = toTree([
       { id: 1, parentId: null },

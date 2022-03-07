@@ -12,21 +12,15 @@
   },
   "scripts": {
     "buildDoc": "typedoc",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev:tree2arr": "pnpm dev --filter \"@zcyutils/tree2arr\"",
-    "build:tree2arr": "pnpm build --filter \"@zcyutils/tree2arr\"",
     "pub:tree2arr": "pnpm pub --filter \"@zcyutils/tree2arr\"",
     "dev:other": "pnpm dev --filter \"@zcyutils/other\"",
-    "build:other": "pnpm build --filter \"@zcyutils/other\"",
     "pub:other": "pnpm pub --filter \"@zcyutils/other\"",
-    "test:other": "pnpm test --filter \"@zcyutils/other\"",
-    "test:tree2arr": "pnpm test --filter \"@zcyutils/tree2arr\"",
     "dev:kit": "pnpm dev --filter \"@zcyutils/kit\"",
-    "build:kit": "pnpm build --filter \"@zcyutils/kit\"",
     "dev:storage": "pnpm dev --filter \"@zcyutils/storage\"",
-    "build:storage": "pnpm build --filter \"@zcyutils/storage\"",
     "pub:storage": "pnpm pub --filter \"@zcyutils/storage\"",
-    "a": "esmo scripts/a.ts"
+    "all-build": "esmo scripts/build.ts",
+    "all-test": "esmo scripts/test.ts"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
