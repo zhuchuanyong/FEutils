@@ -54,7 +54,7 @@ import { xx } from '@zcytools/storage';
 * TypeOf
 * validator
 * Web Api
-* * url
+  * url
   * base64
   * blobToDataURL 将 file、blob、stream 格式 转 DateURL
   * dataURLtoBlob 将图片的 dataURL 转为 Blob 格式
@@ -62,6 +62,9 @@ import { xx } from '@zcytools/storage';
   * getImgToBlob 将图片的 url 转为 Blob 格式
   * downloadFile 在客户端触发文件下载
   * setClipboardData 将文本数据放置在剪贴板上
+  * DOM
+  * style 样式
+  * 
 
 
 
