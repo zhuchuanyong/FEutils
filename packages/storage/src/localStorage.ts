@@ -42,9 +42,17 @@ const setLocalStorage = (key: string, value: any, expire: number) => {
   window.localStorage.setItem(key, store);
 };
 
+/**
+ * 移除LocalStorage
+ * @param key 
+ */
 const removeLocalStorage = (key: string) => {
   window.localStorage.removeItem(key);
 };
+
+/**
+ * 清空LocalStorage
+ */
 const clearLocalStorage = () => {
   window.localStorage.clear();
 };
