@@ -1,6 +1,6 @@
 {
   "name": "@zcyutils/other",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "files":[
+  "files": [
     "dist",
     "src"
   ],
@@ -35,6 +35,5 @@
       "<rootDir>/src/**/__tests__/*.test.ts"
     ]
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
