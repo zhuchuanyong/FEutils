@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "author": "zhuchuanuyong",
+  "description":"other",
   "license": "MIT",
   "repository": {
     "type": "git",

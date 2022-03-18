@@ -22,14 +22,16 @@
     "all-build": "esmo scripts/build.ts",
     "all-test": "esmo scripts/test.ts",
     "test": "pnpm test --filter @zcyutils/is",
-    "build":"pnpm build --filter @zcyutils/other",
-    "release":"pnpm release --filter @zcyutils/other"
+    "build": "pnpm build --filter @zcyutils/other",
+    "release": "pnpm release --filter @zcyutils/other",
+    "test-release": "esmo scripts/release.ts"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/lodash": "^4.14.179",
     "@zcytools/prettier-standard-config": "^0.0.1",
     "esno": "^0.14.1",
+    "fs-extra": "^10.0.1",
     "jest": "^27.4.3",
     "release-it": "^14.12.5",
     "rimraf": "^3.0.2",

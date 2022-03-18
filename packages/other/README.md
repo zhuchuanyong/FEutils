@@ -13,7 +13,7 @@ $ npm i @zcytools/utils
 $ yarn add @zcytools/utils
 $ pnpm add @zcytools/utils
 or 也可独立安装独立的功能包
-$ npm i @zcytools/storage
+$ npm i @zcytools/other
 ```
 ## 🔨 使用
 
@@ -28,6 +28,6 @@ $ npm i @zcytools/storage
 ```ts
 import { xx } from '@zcytools/utils';
 // or 只引入需要使用的包
-import { xx } from '@zcytools/storage';
+import { xx } from '@zcytools/other';
 ```
 
