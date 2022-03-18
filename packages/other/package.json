@@ -15,7 +15,12 @@
     "test": "jest",
     "dev": "tsup src/index.ts --format esm,cjs,iife --legacy-output --watch ",
     "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --dts --clean",
+    "release": "pnpm build & release-it",
     "pub": "npm publish --access public"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files":[
     "dist",
