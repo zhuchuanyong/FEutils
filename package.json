@@ -20,7 +20,8 @@
     "dev:storage": "pnpm dev --filter \"@zcyutils/storage\"",
     "pub:storage": "pnpm pub --filter \"@zcyutils/storage\"",
     "all-build": "esmo scripts/build.ts",
-    "all-test": "esmo scripts/test.ts"
+    "all-test": "esmo scripts/test.ts",
+    "test": "pnpm test --filter @zcyutils/is"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",

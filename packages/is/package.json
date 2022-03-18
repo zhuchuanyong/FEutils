@@ -1,0 +1,39 @@
+{
+  "name": "@zcyutils/is",
+  "private": false,
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "author": "zhuchuanuyong",
+  "license": "MIT",
+  "description": "类型判断",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhuchuanyong/FEutils"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "tsup src/index.ts --format esm,cjs,iife --legacy-output --watch ",
+    "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --dts --clean",
+    "pub": "npm publish --access public"
+  },
+  "files":[
+    "dist",
+    "src"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverage": true,
+    "testMatch": [
+      "<rootDir>/test/**/*.test.ts",
+      "<rootDir>/src/**/*.test.ts",
+      "<rootDir>/src/**/__tests__/*.test.ts"
+    ],
+    "moduleNameMapper": {
+      "^@lib/(.*)$": "<rootDir>/dist/$1",
+      "^@src/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}
