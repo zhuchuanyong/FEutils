@@ -21,7 +21,7 @@
     "pub:storage": "pnpm pub --filter \"@zcyutils/storage\"",
     "all-build": "esmo scripts/build.ts",
     "all-test": "esmo scripts/test.ts",
-    "test": "pnpm test --filter @zcyutils/is",
+    "test": "pnpm test --filter @zcyutils/other",
     "build": "pnpm build --filter @zcyutils/other",
     "release": "pnpm release --filter @zcyutils/other",
     "test-release": "esmo scripts/release.ts"

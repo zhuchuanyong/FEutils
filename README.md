@@ -48,9 +48,15 @@ import { xx } from '@zcytools/storage';
 * Object
 * Array 
 * Date
+  * getMonthOfDay  获取某月有多少天
+  * getYearOfDay  获取某年有多少天
+  * getDayOfYear  获取某个日期是当年中的第几天
+  * getDayOfYearWeek   获取某个日期在这一年的第几周
 * Function
 * String
 * Number
+  * 将阿拉伯数字翻译成中文的大写数字
+  * 将数字转换为大写金额 
 * TypeOf
 * validator
 * Web Api
