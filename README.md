@@ -57,6 +57,7 @@ import { xx } from '@zcytools/storage';
 * Number
   * 将阿拉伯数字翻译成中文的大写数字
   * 将数字转换为大写金额 
+    * https://github.com/cnwhy/nzh
 * TypeOf
 * validator
 * Web Api
